@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Potholders | Catalogue</title>
+    <meta
+      name="description"
+      content="Browse handcrafted potholders: product images, prices, and a size/price comparison table."
+    />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Catalogue</h1>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="catalogue.html" aria-current="page">Catalogue</a>
+        <a href="about.html">About</a>
+        <a href="materials.html">Materials</a>
+        <a href="process.html">Process</a>
+        <a href="custom.html">Custom Orders</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="gallery" aria-labelledby="gallery-title">
+        <h2 id="gallery-title">Featured</h2>
+
+        <div class="product" role="article" aria-labelledby="p1">
+          <img
+            src="images/potholder1.jpg"
+            alt="Sunset Weave potholder in orange, pink, and yellow tones"
+          />
+          <h3 id="p1">Sunset Weave</h3>
+          <p class="price">$12.00</p>
+        </div>
+
+        <div class="product" role="article" aria-labelledby="p2">
+          <img
+            src="images/potholder2.jpg"
+            alt="Ocean Twist potholder in blue and teal"
+          />
+          <h3 id="p2">Ocean Twist</h3>
+          <p class="price">$12.00</p>
+        </div>
+
+        <div class="product" role="article" aria-labelledby="p3">
+          <img
+            src="images/potholder3.jpg"
+            alt="Autumn Heat potholder in red and yellow"
+          />
+          <h3 id="p3">Autumn Heat</h3>
+          <p class="price">$12.00</p>
+        </div>
+      </section>
+
+      <!-- Data table (not for layout) -->
+      <section aria-labelledby="table-title" class="product-table">
+        <h2 id="table-title">Product Comparison</h2>
+        <table>
+          <caption>
+            Size and material comparison for standard potholder styles
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Product</th>
+              <th scope="col">Size (in)</th>
+              <th scope="col">Material</th>
+              <th scope="col">Price</th>
+              <th scope="col">Care</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Sunset Weave</th>
+              <td>8 × 8</td>
+              <td>100% premium cotton loops</td>
+              <td>$12.00</td>
+              <td>Machine wash cold, tumble low</td>
+            </tr>
+            <tr>
+              <th scope="row">Ocean Twist</th>
+              <td>8 × 8</td>
+              <td>Cotton + heat-resistant batting</td>
+              <td>$14.00</td>
+              <td>Machine wash cold, reshape while damp</td>
+            </tr>
+            <tr>
+              <th scope="row">Autumn Heat</th>
+              <td>9 × 9</td>
+              <td>Thick cotton loops</td>
+              <td>$15.00</td>
+              <td>Spot clean recommended for bright dyes</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Potholders by Hand</p>
+      <p>
+        <a href="mailto:myles.yaeger@gmail.com">Send an email</a>
+      </p>
+    </footer>
+  </body>
+</html>

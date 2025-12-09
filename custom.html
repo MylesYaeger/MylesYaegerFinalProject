@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Potholders | Custom Orders</title>
+    <meta
+      name="description"
+      content="Design your own potholder — submit colors and notes in our custom order form."
+    />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Custom Orders</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="about.html">About</a>
+        <a href="materials.html">Materials</a>
+        <a href="process.html">Process</a>
+        <a href="custom.html">Custom Orders</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Design Your Own</h2>
+        <p>
+          Select your favorite colors and submit a request below. We'll reply to
+          confirm details and turnaround time.
+        </p>
+
+        <form action="#" method="post" novalidate>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="colors">Preferred Colors</label>
+          <input
+            type="text"
+            id="colors"
+            name="colors"
+            placeholder="e.g., teal, orange, yellow"
+          />
+
+          <label for="size">Preferred Size</label>
+          <select id="size" name="size" required>
+            <option value="">Select size</option>
+            <option value="8x8">8 × 8 in</option>
+            <option value="9x9">9 × 9 in</option>
+          </select>
+
+          <label for="notes">Additional Notes</label>
+          <textarea id="notes" name="notes" rows="4"></textarea>
+
+          <button type="submit" class="button">Submit Request</button>
+        </form>
+
+        <p class="note">this form doesnt work its for structure only</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Potholders by Hand</p>
+      <p>
+        <a href="mailto:myles.yaeger@gmail.com">Send an email</a>
+      </p>
+    </footer>
+  </body>
+</html>
