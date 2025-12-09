@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,7 +10,7 @@
       content="Design your own potholder — submit colors and notes in our custom order form."
     />
     <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&family=Raleway:wght@500&display=swap"
       rel="stylesheet"
@@ -18,30 +19,47 @@
   <body>
     <header>
       <h1>Custom Orders</h1>
-      <nav>
+      <nav aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="catalogue.html">Catalogue</a>
         <a href="about.html">About</a>
         <a href="materials.html">Materials</a>
         <a href="process.html">Process</a>
-        <a href="custom.html">Custom Orders</a>
+        <a href="custom.html" aria-current="page">Custom Orders</a>
       </nav>
     </header>
 
     <main>
-      <section>
-        <h2>Design Your Own</h2>
+      <section aria-labelledby="custom-title">
+        <h2 id="custom-title">Design Your Own</h2>
         <p>
           Select your favorite colors and submit a request below. We'll reply to
           confirm details and turnaround time.
         </p>
 
-        <form action="#" method="post" novalidate>
+        <form
+          action="#"
+          method="post"
+          aria-label="Custom order form"
+          novalidate
+        >
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            aria-required="true"
+          />
 
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            aria-required="true"
+          />
 
           <label for="colors">Preferred Colors</label>
           <input
@@ -64,7 +82,7 @@
           <button type="submit" class="button">Submit Request</button>
         </form>
 
-        <p class="note">this form doesnt work its for structure only</p>
+        <p class="note">this form dosent work its for structure only</p>
       </section>
     </main>
 
